@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 5rem;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 3rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s;
+    font-family: inherit;
+    font-weight: 700;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: #2626f8;
+  }
+
+  &__paragraph {
+    margin-bottom: 7rem;
+    color: var(--header-para);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 1.6rem;
+      display: inline-block;
+      margin: 0 0.5rem;
+    }
+  }
+}

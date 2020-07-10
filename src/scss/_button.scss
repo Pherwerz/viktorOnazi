@@ -1,0 +1,29 @@
+.btn,
+.btn:link,
+.btn:visited {
+  height: 7.2rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: var(--btn-border);
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #6262ff;
+    color: #ffffff;
+  }
+
+  & div {
+    margin-right: 1rem;
+    position: relative;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
