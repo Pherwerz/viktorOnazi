@@ -1,0 +1,123 @@
+.process {
+  margin-bottom: 20rem;
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+      font-size: 6rem;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    height: 25rem;
+    border: 1px solid var(--color-text);
+  }
+}
+
+.skill {
+  margin-bottom: 20rem;
+
+  &__skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__item {
+    flex: 0 0 25%;
+    height: 100%;
+    border: var(--skill-border);
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @include respond(phone) {
+      flex: none;
+      height: 50rem;
+      width: 70%;
+      margin-bottom: 10rem;
+      font-size: 3.2rem;
+    }
+
+    & > * {
+      transition: all 0.5s;
+    }
+  }
+
+  &__item:hover &__img,
+  &__item:hover &__text {
+    transform: translate(-5rem, -7rem);
+    opacity: 0;
+  }
+
+  &__img {
+    width: 3.2rem;
+    margin-right: 2rem;
+
+    @include respond(phone) {
+      width: 6.4rem;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #6262ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: #ffffff;
+    padding-left: 2rem;
+    visibility: hidden;
+    transform: translate(10rem, 10rem);
+    opacity: 0;
+
+    &--start {
+      justify-content: flex-start;
+
+      & h2 {
+        margin: 3rem 0;
+      }
+    }
+
+    & ul {
+      list-style-position: inside;
+      list-style-type: '- ';
+    }
+
+    &--link:link,
+    &--link:visited {
+      align-self: flex-end;
+      margin-right: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  &__item:hover &__list {
+    visibility: visible;
+    transform: translate(0);
+    opacity: 1;
+  }
+}

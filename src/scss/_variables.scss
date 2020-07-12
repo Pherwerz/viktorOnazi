@@ -1,0 +1,72 @@
+[data-theme='light'] {
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --link: #777777;
+  --active: #000000;
+  --header-para: #464646;
+  --header-msg: #777777;
+  --skill-border: 1px solid #eeeeee;
+  --btn-border: 1px solid #e1e1e1;
+  --gradient: repeating-linear-gradient(
+    to right,
+    #ffffff 5%,
+    #f7f7f7 5%,
+    #f7f7f7 5.1%,
+    #ffffff 5.1%,
+    #ffffff 15%,
+    #f7f7f7 15%,
+    #f7f7f7 15.1%,
+    #ffffff 15.1%,
+    #ffffff 25%,
+    #f7f7f7 25%,
+    #f7f7f7 25.1%,
+    #ffffff 25.1%,
+    #ffffff 75%
+  );
+}
+
+[data-theme='dark'] {
+  --color-text: #ffffff;
+  --color-background: #000000;
+  --link: #bebebe;
+  --active: #ffffff;
+  --header-para: #ffffff;
+  --header-msg: #e1e1e1;
+  --skill-border: 1px solid #464646;
+  --btn-border: 1px solid #464646;
+  --btn-border-feature: 1px solid #707070;
+  --gradient: repeating-linear-gradient(
+    to right,
+    #000000 5%,
+    #222222 5%,
+    #222222 5.1%,
+    #000000 5.1%,
+    #000000 15%,
+    #222222 15%,
+    #222222 15.1%,
+    #000000 15.1%,
+    #000000 25%,
+    #222222 25%,
+    #222222 25.1%,
+    #000000 25.1%,
+    #000000 75%
+  );
+}
+
+@mixin respond($break-point) {
+  @if $break-point == phone {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $break-point == mid {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $break-point == sm {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+}

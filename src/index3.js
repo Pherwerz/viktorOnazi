@@ -1,5 +1,5 @@
 /* *****************
- THIS SCRIPT CONTROLS THE ABOUT HTML
+ THIS SCRIPT CONTROLS THE MESSAGE HTML
 *******************/
 import './index.scss';
 import { elements } from './js/base';
@@ -16,7 +16,6 @@ elements.switcher.forEach(cur =>
       });
       elements.navimage.src = './img/close-white.svg';
       elements.headerNavImage.src = './img/menu-white.svg';
-      elements.aboutImg.src = './img/arrow-right-white.svg';
       elements.body.dataset.theme = 'dark';
       elements.tracker = false;
     } else {
@@ -28,7 +27,6 @@ elements.switcher.forEach(cur =>
       });
       elements.navimage.src = './img/close.svg';
       elements.headerNavImage.src = './img/menu.svg';
-      elements.aboutImg.src = './img/arrow-right.svg';
       elements.body.dataset.theme = 'light';
       elements.tracker = true;
     }
@@ -53,18 +51,4 @@ elements.link.forEach(cur => {
     elements.navigation.style.visibility = 'hidden';
     elements.navigation.style.opacity = '0';
   });
-});
-
-// THIS IS THE HOVER EFFECT TO SWICTH ARROW ON BOTTON TO WHITE
-elements.about.addEventListener('mouseover', () => {
-  if (elements.tracker) {
-    elements.aboutImg.src = './img/arrow-right-white.svg';
-  }
-});
-
-// THIS IS THE HOVER EFFECT TO SWICTH ARROW ON BOTTON BACK TO NORMAL ONCE THE MOUSE LEAVES
-elements.about.addEventListener('mouseleave', () => {
-  if (elements.tracker) {
-    elements.aboutImg.src = './img/arrow-right.svg';
-  }
 });

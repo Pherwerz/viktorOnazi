@@ -1,0 +1,93 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 20rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__left {
+    flex: 0 0 35%;
+
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include respond(phone) {
+      width: 70%;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    height: 52.5rem;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond(phone) {
+      flex: none;
+      height: 120rem;
+      align-items: center;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 4rem;
+
+    @include respond(phone) {
+      font-size: 8rem;
+    }
+  }
+
+  &__paragraph {
+    color: var(--header-para);
+
+    @include respond(phone) {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    width: 23rem;
+
+    @include respond(phone) {
+      width: 46rem;
+    }
+
+    & span {
+      margin-right: 1rem;
+      transition: margin 0.3s;
+    }
+
+    &:hover span {
+      margin-right: 2rem;
+    }
+
+    & img {
+      margin-left: 1rem;
+      transition: margin 0.3s;
+      width: 10%;
+    }
+
+    &:hover img {
+      margin-left: 2rem;
+    }
+  }
+}

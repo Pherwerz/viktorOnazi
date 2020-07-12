@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(phone) {
+    height: 140rem;
+  }
+
   &__spe {
     height: auto;
   }
@@ -16,10 +20,23 @@
     align-items: center;
     padding: 2rem 0;
     width: 100%;
+
+    @include respond(phone) {
+      padding: 4rem 0;
+    }
+  }
+
+  &__index {
+    z-index: 40;
   }
 
   &__logo {
     flex: 0 0 5%;
+    height: 4rem;
+
+    @include respond(phone) {
+      height: 8rem;
+    }
   }
 
   &__list {
@@ -28,6 +45,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__items {
@@ -73,9 +109,17 @@
   &__intro {
     animation: slideUp 1s;
 
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
+
     & img {
       width: 1.6rem;
       transition: all 0.5s;
+
+      @include respond(phone) {
+        width: 3.2rem;
+      }
 
       &:hover {
         transform: rotate(50deg);
@@ -102,6 +146,11 @@
     animation: slideDown 1s 1s;
     animation-fill-mode: backwards;
 
+    @include respond(phone) {
+      font-size: 3.2rem;
+      width: 100%;
+    }
+
     & span {
       font-weight: 700;
     }
@@ -124,6 +173,7 @@
 
     & img {
       transition: all 0.5s;
+      width: 8%;
     }
 
     &:hover img {

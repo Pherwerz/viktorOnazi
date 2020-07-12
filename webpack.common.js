@@ -3,7 +3,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: {
     pageOne: './src/index1.js',
-    pageTwo: './src/index2.js'
+    pageTwo: './src/index2.js',
+    pageThree: './src/index3.js'
   }, // where webpack starts looking
 
   plugins: [

@@ -1,0 +1,68 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone) {
+      padding: 4rem 0;
+    }
+
+    & > * {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+    margin-top: 30rem;
+  }
+
+  &__items {
+    margin-bottom: 5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: var(--link);
+    font-weight: inherit;
+    font-family: inherit;
+
+    @include respond(phone) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: var(--active);
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: var(--gradient);
+  z-index: 20;
+}

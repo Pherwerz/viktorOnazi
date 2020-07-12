@@ -19,6 +19,11 @@ module.exports = merge(common, {
       filename: 'about.html',
       template: './src/about.html',
       chunks: ['pageTwo']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'message.html',
+      template: './src/message.html',
+      chunks: ['pageThree']
     })
   ],
   module: {
