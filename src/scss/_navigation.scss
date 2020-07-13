@@ -16,7 +16,7 @@
     align-items: center;
 
     @include respond(phone) {
-      padding: 4rem 0;
+      padding: 8rem 0;
     }
 
     & > * {
@@ -48,7 +48,7 @@
     font-family: inherit;
 
     @include respond(phone) {
-      font-size: 3.2rem;
+      font-size: 5rem;
     }
   }
 

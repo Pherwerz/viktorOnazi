@@ -91,8 +91,8 @@
 
   &__active:link,
   &__active:visited {
-    color: var(--color-text);
-    font-weight: 700;
+    color: var(--color-text) !important;
+    font-weight: 700 !important;
   }
 
   &__button {
