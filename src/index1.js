@@ -11,9 +11,7 @@ elements.switcher.forEach(cur =>
       elements.switcherimage.forEach(currr => {
         currr.src = './img/sun.svg';
       });
-      elements.logo.forEach(current => {
-        current.src = './img/Victor Onazi white.png';
-      });
+      elements.logo.src = './img/Victor Onazi white.png';
       elements.arrowDown.src = './img/arrow-down-white.svg';
       elements.navimage.src = './img/close-white.svg';
       elements.headerNavImage.src = './img/menu-white.svg';
@@ -26,9 +24,7 @@ elements.switcher.forEach(cur =>
       elements.switcherimage.forEach(curr => {
         curr.src = './img/moon.svg';
       });
-      elements.logo.forEach(curEl => {
-        curEl.src = './img/Victor Onazi.png';
-      });
+      elements.logo.src = './img/Victor Onazi.png';
       elements.arrowDown.src = './img/arrow-down.svg';
       elements.navimage.src = './img/close.svg';
       elements.headerNavImage.src = './img/menu.svg';

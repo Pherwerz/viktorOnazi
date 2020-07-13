@@ -11,20 +11,16 @@ elements.switcher.forEach(cur =>
       elements.switcherimage.forEach(currr => {
         currr.src = './img/sun.svg';
       });
-      elements.logo.forEach(current => {
-        current.src = './img/Victor Onazi white.png';
-      });
+      elements.logo.src = './img/Victor Onazi white.png';
       elements.navimage.src = './img/close-white.svg';
       elements.headerNavImage.src = './img/menu-white.svg';
       elements.body.dataset.theme = 'dark';
       elements.tracker = false;
     } else {
-      elements.switcherimage.forEach(curr => {
-        curr.src = './img/moon.svg';
+      elements.switcherimage.forEach(cury => {
+        cury.src = './img/moon.svg';
       });
-      elements.logo.forEach(curEl => {
-        curEl.src = './img/Victor Onazi.png';
-      });
+      elements.logo.src = './img/Victor Onazi.png';
       elements.navimage.src = './img/close.svg';
       elements.headerNavImage.src = './img/menu.svg';
       elements.body.dataset.theme = 'light';

@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 7rem;
   margin-bottom: 20rem;
@@ -27,9 +27,7 @@
   }
 
   &__right {
-    flex: 1;
     height: 52.5rem;
-    padding: 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,7 +35,7 @@
 
     @include respond(phone) {
       flex: none;
-      height: 120rem;
+      height: 140rem;
       align-items: center;
     }
   }
@@ -53,6 +51,7 @@
 
   &__paragraph {
     color: var(--header-para);
+    width: 65rem;
 
     @include respond(phone) {
       font-size: 3.2rem;
@@ -74,6 +73,7 @@
     & span {
       margin-right: 1rem;
       transition: margin 0.3s;
+      font-family: 'Quicksand', sans-serif;
     }
 
     &:hover span {

@@ -5,7 +5,7 @@ export const elements = {
   navigation: document.querySelector('.navigation'),
   features: Array.from(document.querySelectorAll('.features__btn')),
   featuresimg: Array.from(document.querySelectorAll('.features__img')),
-  logo: Array.from(document.querySelectorAll('.header__logo')),
+  logo: document.querySelector('.header__logo'),
   switcherimage: Array.from(
     document.querySelectorAll('.header__button--image')
   ),

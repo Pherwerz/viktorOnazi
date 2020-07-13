@@ -59,7 +59,7 @@
 
   &__item:hover &__img,
   &__item:hover &__text {
-    transform: translate(-5rem, -7rem);
+    transform: translate(-5rem, 0);
     opacity: 0;
   }
 
@@ -90,7 +90,7 @@
     color: #ffffff;
     padding-left: 2rem;
     visibility: hidden;
-    transform: translate(10rem, 10rem);
+    transform: translate(10rem, 0);
     opacity: 0;
 
     &--start {
@@ -104,6 +104,18 @@
     & ul {
       list-style-position: inside;
       list-style-type: '- ';
+    }
+
+    & li {
+      font-size: 1.3rem;
+
+      @include respond(phone) {
+        font-size: 2.6rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
 
     &--link:link,

@@ -15,15 +15,22 @@
   }
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-image: var(--gradient);
 
     @include respond(phone) {
       padding: 4rem 0;
     }
+  }
+
+  &__topp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
   }
 
   &__index {
@@ -82,6 +89,12 @@
     color: var(--active);
   }
 
+  &__active:link,
+  &__active:visited {
+    color: var(--color-text);
+    font-weight: 700;
+  }
+
   &__button {
     background-color: transparent;
     border: none;
@@ -108,6 +121,7 @@
 
   &__intro {
     animation: slideUp 1s;
+    font-weight: 400;
 
     @include respond(phone) {
       font-size: 3.2rem;
@@ -153,6 +167,7 @@
 
     & span {
       font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
     }
   }
   &__btn {
@@ -160,7 +175,7 @@
     animation-fill-mode: backwards;
 
     &--span1 {
-      transition: all 0.1s 0.5s;
+      transition: all 0.1s;
     }
 
     &--span {
@@ -168,11 +183,11 @@
       top: 0;
       left: 0;
       opacity: 0;
-      transition: all 0.1s 0.5s;
+      transition: all 0.1s;
     }
 
     & img {
-      transition: all 0.5s;
+      transition: all 0.1s;
       width: 8%;
     }
 
