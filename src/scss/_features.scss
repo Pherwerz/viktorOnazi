@@ -38,6 +38,7 @@
 
     @include respond(phone) {
       margin-bottom: 6rem;
+      flex: none;
     }
   }
 
