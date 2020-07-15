@@ -154,9 +154,20 @@
   }
 
   &__paragraph {
-    width: 73rem;
-    color: var(--header-para);
-    margin-bottom: 5rem;
+    &2 {
+      animation: slideUp 1s 2s;
+      animation-fill-mode: backwards;
+    }
+
+    &,
+    &2 {
+      width: 73rem;
+      color: var(--header-para);
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__paragraph {
     animation: slideDown 1s 1s;
     animation-fill-mode: backwards;
 
@@ -170,6 +181,7 @@
       font-family: 'Quicksand', sans-serif;
     }
   }
+
   &__btn {
     animation: slideUp 1s 2s;
     animation-fill-mode: backwards;

@@ -2,7 +2,7 @@
  THIS SCRIPT CONTROLS THE INDEX HTML (HOME PAGE)
 *******************/
 import './index.scss';
-import { elements } from './js/base';
+import elements from './js/base';
 
 // THIS CONTROLS THE SWICTHING TO LIGHT AND DARK MODE
 elements.switcher.forEach(cur =>
@@ -58,11 +58,11 @@ elements.link.forEach(cur => {
 });
 
 // THIS IS THE HOVER EFFECT TO SWICTH ARROW ON BOTTON TO WHITE
-elements.btnHead.addEventListener('mouseover', () => {
-  if (elements.tracker) {
-    elements.arrowDown.src = './img/arrow-down-white.svg';
-  }
-});
+// elements.btnHead.addEventListener('mouseover', () => {
+//   if (elements.tracker) {
+//     elements.arrowDown.src = './img/arrow-down-white.svg';
+//   }
+// });
 
 elements.features.forEach((cur, i) => {
   cur.addEventListener('mouseover', () => {
@@ -73,11 +73,11 @@ elements.features.forEach((cur, i) => {
 });
 
 // THIS IS THE HOVER EFFECT TO SWICTH ARROW ON BOTTON BACK TO NORMAL ONCE THE MOUSE LEAVES
-elements.btnHead.addEventListener('mouseleave', () => {
-  if (elements.tracker) {
-    elements.arrowDown.src = './img/arrow-down.svg';
-  }
-});
+// elements.btnHead.addEventListener('mouseleave', () => {
+//   if (elements.tracker) {
+//     elements.arrowDown.src = './img/arrow-down.svg';
+//   }
+// });
 
 elements.features.forEach((cur, i) => {
   elements.featuresPara[i].style.visibility = 'hidden';

@@ -2,7 +2,7 @@
  THIS SCRIPT CONTROLS THE ABOUT HTML
 *******************/
 import './index.scss';
-import { elements } from './js/base';
+import elements from './js/base';
 
 // THIS CONTROLS THE SWICTHING TO LIGHT AND DARK MODE
 elements.switcher.forEach(cur =>

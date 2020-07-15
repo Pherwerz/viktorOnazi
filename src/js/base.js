@@ -1,4 +1,4 @@
-export const elements = {
+const elements = {
   switcher: Array.from(document.querySelectorAll('.header__button')),
   close: document.querySelector('.navigation__close'),
   navbtn: document.querySelector('.header__nav'),
@@ -21,3 +21,5 @@ export const elements = {
   link: Array.from(document.querySelectorAll('.navigation__link')),
   tracker: true
 };
+
+export default elements;
